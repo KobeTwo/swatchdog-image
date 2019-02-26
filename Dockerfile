@@ -6,6 +6,7 @@ RUN mkdir -p $BUILD_HOME
 ADD install.sh $BUILD_HOME/
 
 # setup the imgage
+RUN chmod +x $BUILD_HOME/install.sh
 RUN $BUILD_HOME/install.sh
 
 # Remove working directory
